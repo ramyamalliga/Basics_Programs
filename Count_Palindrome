@@ -1,0 +1,16 @@
+const arrayOfStrings = [ "Madam", "Racecar", "Hello"];
+console.log(countPalindromes(arrayOfStrings));
+
+
+function countPalindromes(strings) {
+    let count = 0;
+
+    for (const str of strings) {
+        const String = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+        const reversedString = String.split('').reverse().join('');
+        if (String === reversedString) {
+            count++;
+        }
+    }
+    return count;
+}
