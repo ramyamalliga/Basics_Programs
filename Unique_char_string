@@ -1,0 +1,15 @@
+function countUniqueCharacters(str) {
+    let uniqueCount = 0;
+    let seen = '';
+
+    for (const char of str) {
+        if (seen.indexOf(char) === -1) {
+            seen += char;
+            uniqueCount++;
+        }
+    }
+
+    return uniqueCount;
+}
+const testString = "hello world";
+console.log(`Number of unique characters: ${countUniqueCharacters(testString)}`); 
