@@ -1,0 +1,9 @@
+function containsSpecialCharacters(str) {
+    const specialCharPattern = /[^a-zA-Z0-9]/;
+    return specialCharPattern.test(str);
+}
+const testStrings = ["Hello123", "Hello@World", "NoSpecials", "Spec!al123"];
+
+for (const str of testStrings) {
+    console.log(`"${str}" contains special characters: ${containsSpecialCharacters(str)}`);
+}
