@@ -1,0 +1,15 @@
+function findFirstNonLetterCharacter(str) {
+    const nonLetterRegex = /[^a-zA-Z]/;
+    for (let i = 0; i < str.length; i++) {
+        if (nonLetterRegex.test(str[i])) {
+            return str[i];
+        }
+    }
+    
+    return null; 
+}
+
+const inputString = "Hello, World!";
+const firstNonLetter = findFirstNonLetterCharacter(inputString);
+
+console.log(firstNonLetter); 
