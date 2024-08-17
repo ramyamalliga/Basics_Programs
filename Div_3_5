@@ -1,0 +1,6 @@
+function findFirstDivisibleByBoth(arr) {
+    return arr.find(num => num % 3 === 0 && num % 5 === 0);
+}
+const array = [1, 7, 15, 20, 25];
+const result = findFirstDivisibleByBoth(array);
+console.log(result);
