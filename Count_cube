@@ -1,0 +1,16 @@
+function isPerfectCube(num) {
+    if (num < 0) {
+        return false; 
+    }
+    const cubeRoot = Math.cbrt(num); 
+    const roundedRoot = Math.round(cubeRoot);
+    return roundedRoot ** 3 === num; 
+}
+function countPerfectCubes(arr) {
+    return arr.filter(isPerfectCube).length;
+}
+
+const array = [1, 8, 27, 64, 2, 9, 16];
+const count = countPerfectCubes(array);
+
+console.log(count); 
