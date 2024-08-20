@@ -1,0 +1,10 @@
+function countGreaterThanAverage(arr) {
+  if (arr.length === 0) return 0; 
+
+  const average = arr.reduce((sum, num) => sum + num, 0) / arr.length;
+
+  return arr.filter(num => num > average).length;
+}
+
+const array = [1, 2, 3, 4, 5];
+console.log(countGreaterThanAverage(array)); 
