@@ -1,0 +1,1 @@
+This project provides a JavaScript function to count the number of lowercase letters in a given string.
