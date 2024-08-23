@@ -1,0 +1,1 @@
+This project provides a JavaScript function to find the first non-zero element in an array.
