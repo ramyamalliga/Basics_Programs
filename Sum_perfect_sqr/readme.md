@@ -1,0 +1,1 @@
+This project provides a JavaScript function to calculate the sum of the squares of the elements in an array.
