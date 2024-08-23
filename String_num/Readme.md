@@ -1,0 +1,1 @@
+This project provides a function to determine if a given string contains any numeric digits. It is a simple utility that can be used in a variety of applications where you need to validate or analyze string content.
