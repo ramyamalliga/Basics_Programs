@@ -1,0 +1,1 @@
+This project provides a JavaScript function to find the first element in an array that is a perfect square. A perfect square is a number that is the square of an integer.
